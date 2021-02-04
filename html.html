@@ -1,0 +1,32 @@
+<html>
+
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+<link  rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+
+<p style='font-size:200%;max-width:100%;overflow-X:auto;padding-top:20px;padding-bottom:20px'> <span id="problem">ax^2 + bx + c = 0hsdfio oo gfo o897089h 87 07</span></p>
+
+<script>
+
+var loca= window.location.href.split("gethisformu=")[1]
+
+$("#problem").html(loca)
+
+var MQ = MathQuill.getInterface(2);
+  var problemSpan = document.getElementById('problem');
+  MQ.StaticMath(problemSpan);
+</script>
+
+
+</body>
+
+</html>
